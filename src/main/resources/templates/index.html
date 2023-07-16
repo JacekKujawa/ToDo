@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle}">Task List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<h1 th:text="${pageTitle}">Task List</h1>
+<div style="text-align: center; color: red" th:if="${Message != null}" class="alert alert-info" th:text="${Message}"></div>
+<div th:if="${param.successMessage != null}" class="alert alert-success" th:text="${param.successMessage}"></div>
+<table>
+    <thead>
+    <tr>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Priority</th>
+        <th>Remove</th>
+    </tr>
+    </thead>
+    <tbody>
+        </tr>
+        <th:block th:each="task : ${tasks}">
+            <tr>
+                <td th:text="${task.category}"></td>
+                <td th:text="${task.description}"></td>
+                <td th:text="${task.dueDate}"></td>
+                <td th:text="${task.priority}"></td>
+                <td><a th:href="@{/remove/{id}(id=${task.id})}" class="button">Remove</a></td>
+            </tr>
+        </th:block>
+    </th:block>
+    </tbody>
+</table>
+<br><br>
+<div style="text-align: center;">
+    <a href="/menu" class="button">Menu</a>
+    <a href="/new" class="button">Add new task</a>
+    <a href="/" class="button">Tasks list</a>
+
+</div>
+<br><br>
+
+</body>
+</html>

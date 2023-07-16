@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle}">Task List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<h1 th:text="${pageTitle}">Task List</h1>
+<div style="text-align: center; color: red" th:if="${Message != null}" class="alert alert-info" th:text="${Message}"></div>
+<div th:if="${param.successMessage != null}" class="alert alert-success" th:text="${param.successMessage}"></div>
+<table>
+    <thead>
+    <tr>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Priority</th>
+        <th>Remove</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="entry : ${tasks}">
+        <tr>
+            <td colspan="5" style="font-weight: bold; background-color: lightgray;" th:text="${entry.key}"></td>
+        </tr>
+        <th:block th:each="task : ${entry.value}">
+            <tr>
+                <td th:text="${task.getCategory().name()}"></td>
+                <td th:text="${task.getDescription()}"></td>
+                <td th:text="${task.getDueDate()}"></td>
+                <td th:text="${task.getPriority()}"></td>
+                <td><a th:href="@{/remove/{id}(id=${task.id})}" class="button">Remove</a></td>
+            </tr>
+        </th:block>
+    </th:block>
+    </tbody>
+</table>
+<br><br>
+<div style="text-align: center;">
+    <a href="/menu" class="button">Menu</a>
+    <a href="/new" class="button">Add new task</a>
+    <a href="/" class="button">Tasks list</a>
+
+</div>
+<br><br>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "ad2e26ee-1379-457b-aae3-afe249cf7c18",
+    "description": "Grocery shopping",
+    "category": "HOME",
+    "priority": 3,
+    "dueDate": "2023-05-18"
+  },
+  {
+    "id": "eff01e99-bcd4-4bf3-be54-fa0700f8c4a9",
+    "description": "Preparing a report",
+    "category": "WORK",
+    "priority": 1,
+    "dueDate": "2023-05-17"
+  },
+  {
+    "id": "87a60059-991c-4484-9bd9-95a418cc049a",
+    "description": "Booking tickets",
+    "category": "OTHER",
+    "priority": 4,
+    "dueDate": "2023-05-19"
+  },
+  {
+    "id": "07dff7c6-8844-44b8-935f-d898fdd1fc95",
+    "description": "Meeting with a client",
+    "category": "WORK",
+    "priority": 2,
+    "dueDate": "2023-05-27"
+  },
+  {
+    "id": "e41b7319-dbbe-43b0-8927-cdaa1419e4f0",
+    "description": "Preparing a presentation",
+    "category": "WORK",
+    "priority": 3,
+    "dueDate": "2023-05-26"
+  },
+  {
+    "id": "fe48fa59-c9bc-4f7d-856a-63fcfd208b5b",
+    "description": "Cleaning the apartment",
+    "category": "OTHER",
+    "priority": 5,
+    "dueDate": "2023-05-17"
+  },
+  {
+    "id": "33b17c84-91dd-4123-bf9a-14a688b3505f",
+    "description": "Preparing an offer",
+    "category": "WORK",
+    "priority": 1,
+    "dueDate": "2023-05-18"
+  },
+  {
+    "id": "09b7c5b5-bf3d-4c43-95a6-a266c8388bbb",
+    "description": "Resolving a technical issue",
+    "category": "WORK",
+    "priority": 2,
+    "dueDate": "2023-05-18"
+  },
+  {
+    "id": "e660e783-3285-4bce-baa6-fb458fbf17c2",
+    "description": "Cleaning the plot and planting fruit trees",
+    "category": "HOME",
+    "priority": 2,
+    "dueDate": "2023-05-18"
+  },
+  {
+    "id": "d24e340a-e204-42b9-9e42-f94d2227b9fc",
+    "description": "Preparing a schedule",
+    "category": "WORK",
+    "priority": 3,
+    "dueDate": "2023-05-18"
+  },
+  {
+    "id": "ef7d8d16-2ff9-426b-a24b-921784874c23",
+    "description": "Preparing a Java test",
+    "category": "WORK",
+    "priority": 3,
+    "dueDate": "2023-05-18"
+  },
+  {
+    "id": "f61bdb07-0fe8-46f5-8a05-525e1d14bf86",
+    "description": "Organizing a team outing",
+    "category": "OTHER",
+    "priority": 2,
+    "dueDate": "2023-05-27"
+  },
+  {
+    "id": "42865ad6-b846-4e53-9868-57f19a697ace",
+    "description": "Preparing documentation",
+    "category": "WORK",
+    "priority": 2,
+    "dueDate": "2023-05-20"
+  },
+  {
+    "id": "70f4f870-ab86-4c17-afbd-ca995847100c",
+    "description": "Doing laundry and ironing clothes",
+    "category": "HOME",
+    "priority": 1,
+    "dueDate": "2023-05-20"
+  }
+]

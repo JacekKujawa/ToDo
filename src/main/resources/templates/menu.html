@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<div class="container">
+    <h1 class="banner">Menu</h1>
+    <ul class="menu">
+        <li><a class="button" href="/">Tasks list</a></li><br>
+        <li><a class="button" href="/new">Add new task</a></li><br>
+        <li><a class="button" href="/priority1">Priority 1 Tasks</a></li><br>
+        <li><a class="button" href="/next-day">Next Day Tasks</a></li><br>
+        <li><a class="button" href="/priority-desc">Priority Descending Tasks</a></li><br>
+        <li><a class="button" href="/sorted-set">Sorted Tasks by Date</a></li><br>
+        <li><a class="button" href="/most-urgent">Most Urgent Task</a></li><br>
+        <li><a class="button" href="/by-category">Tasks Divided by Category</a></li><br>
+        <li><a class="button" href="/by-priority">Tasks Divided by Priority</a></li><br>
+        <li><a class="button" href="/highest-priority">Highest Priority Task for Each Category</a></li>
+
+        <br>
+        <form action="/category" method="get" class="form-container">
+            <label for="category">Choose a category:</label>
+            <select id="category" name="category">
+                <option value="WORK">Work</option>
+                <option value="HOME">Home</option>
+                <option value="OTHER">Other</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+
+
+        <br>
+        <form action="/description" method="GET" class="form-container">
+            <label for="search">Tasks by Description Contains:</label>
+            <input type="text" name="search" id="search" placeholder="Enter description">
+            <button type="submit" class="button">Search</button>
+        </form>
+
+    </ul>
+</div>
+</body>
+</html>
